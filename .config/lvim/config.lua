@@ -110,3 +110,15 @@ lspconfig.pyright.setup({
     }
   }
 })
+
+lspconfig.elixirls.setup{
+  cmd = { "elixir-ls" },
+  settings = {
+    elixirLS = {
+      dialyzerEnabled = true,
+      fetchDeps = true,
+      enableTestLenses = true,
+      suggestSpecs = true,
+    },
+  },
+}
