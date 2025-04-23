@@ -1,7 +1,6 @@
 window {
   /* background-color: #1a1b26ee; */
-  background-color: rgba(24, 24, 37, 1.0);
-  border-radius: 6px;
+  background-color: rgba(24, 24, 37, 0.9);
 }
 
 * {
@@ -14,6 +13,7 @@ window {
 }
 
 #input {
+  /* background-color: #1a1b26ee; */
   background-color: rgba(24, 24, 37, 0.9);
   color: #c0caf5;
   outline: none;
@@ -38,6 +38,8 @@ window {
 }
 
 #entry:selected {
+  /* background-color: #c0caf5; */
+  /* background-color: #f2cdcd; */
   background-color: rgba(242, 205, 205, 0.9);
   outline: none;
 }

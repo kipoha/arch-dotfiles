@@ -1,5 +1,4 @@
 window {
-  /* background-color: #1a1b26ee; */
   background-color: rgba(24, 24, 37, 1.0);
   border-radius: 6px;
 }
@@ -14,14 +13,20 @@ window {
 }
 
 #input {
-  background-color: rgba(24, 24, 37, 0.9);
-  color: #c0caf5;
+  min-height: 0px;
+  max-height: 0px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 0;
+  background-color: transparent;
+  color: transparent;
   outline: none;
   box-shadow: none;
-  border: 0;
-  border-radius: 10px;
-  font-size: 1rem;
-  padding: 0.5rem;
+}
+
+#input * {
+  color: rgba(24, 24, 37, 1.0);
 }
 
 #inner-box {
@@ -35,6 +40,7 @@ window {
 
 #entry {
   border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 #entry:selected {
@@ -45,4 +51,3 @@ window {
 #text:selected {
   color: #1a1b26;
 }
-

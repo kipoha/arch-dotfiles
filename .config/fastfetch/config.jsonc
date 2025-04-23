@@ -9,57 +9,73 @@
       "left": 2
     }
   },
+  "display": {
+    "separator": " => ",
+  },
   "modules": [
     "break",
     {
       "type": "title",
-      "keyWidth": 10
+      "key": " USER",
     },
-    // "separator",
+    {
+      "type": "custom",
+      // line break
+      "format": "---------------------"
+    },
     // "os",
     // "host",
     // "kernel",
     // "shell",
     {
       "type": "shell",
-      "key": ""
+      "key": " SH  ",
+      "format": "{1}"
     },
     {
       "type": "terminal",
-      "key": ""
+      "key": " TERM",
+      "format": "{1}"
     },
     // "de",
     // "wm",
     {
       "type": "packages",
-      "key": "",
+      "key": " PKGS",
     },
     {
       "type": "wm",
-      "key": ""
+      "key": " WM  ",
+      "format": "{1}"
     },
     // "icons",
     {
       "type": "cpu",
-      "key": "",
+      "key": " CPU ",
+      "format": "{1}"
     },
     {
       "type": "memory",
-      "key": ""
+      "key": " MEM ",
     },
     {
       "type": "gpu",
-      "key": ""
+      "key": " GPU ",
+      "format": "{1} {2}"
     },
     {
       "type": "disk",
-      "key": "",
+      "key": " DISK",
     },
     "break",
     {
       "type": "colors",
       "symbol": "circle",
     },
+    // {
+    //   "type": "swap",
+    //   "key": ""
+    // },
     "break"
   ]
 }

@@ -29,6 +29,7 @@ YAY_PACKAGES = [
     "python311",
     "hyprshot",
     "catppuccin-gtk-theme-mocha",
+    "bibata-cursor-theme",
 ]
 
 

@@ -1,0 +1,40 @@
+* {
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 14px;
+}
+
+.notification {
+    background-color: rgba(30, 30, 46, 0.6);
+    border-radius: 10px;
+    /* border: 2px solid #bc82d9; */
+    border: 2px solid #f2cdcd;
+    padding: 10px;
+}
+
+.notification-title {
+    font-weight: bold;
+    color: #cdd6f4;
+}
+
+.notification-body {
+    /* color: #bac2de; */
+    color: #f2cdcd;
+}
+
+.notification-close-button {
+    /* background-color: #f38ba8; */
+    border-radius: 50%;
+    padding: 5px;
+    color: #f2cdcd;
+}
+
+.notification-icon {
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.notification.critical {
+    background-color: rgba(191, 97, 106, 0.9);
+    border-left: 5px solid #bf616a;
+}
+
