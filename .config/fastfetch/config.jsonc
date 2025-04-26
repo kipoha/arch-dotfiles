@@ -2,70 +2,91 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
     "source": "~/.config/fastfetch/logos/IMG_20250211_024822.png",
-    "width": 24,
+    "width": 28,
     // "height": 20,
     "padding": {
+      "top": 2,
       "right": 4,
       "left": 2
     }
   },
   "display": {
-    "separator": " => ",
+    "separator": " ",
   },
   "modules": [
     "break",
-    {
-      "type": "title",
-      "key": " USER",
-    },
-    {
-      "type": "custom",
-      // line break
-      "format": "---------------------"
-    },
+    // {
+    //   "type": "title",
+    //   "key": " USER",
+    // },
     // "os",
     // "host",
     // "kernel",
     // "shell",
     {
+      "type": "custom",
+      "format": "┌──────────────────────Software──────────────────────┐"
+    },
+    {
+      "type": "os",
+      "key": "│ ",
+      "format": "{2}"
+    },
+    {
+      "type": "kernel",
+      "key": "│ ├",
+      "format": "{1}"
+    },
+    {
       "type": "shell",
-      "key": " SH  ",
+      "key": "│ ├",
       "format": "{1}"
     },
     {
       "type": "terminal",
-      "key": " TERM",
+      "key": "│ ├",
       "format": "{1}"
     },
-    // "de",
-    // "wm",
     {
       "type": "packages",
-      "key": " PKGS",
+      "key": "│ ├",
     },
     {
       "type": "wm",
-      "key": " WM  ",
+      "key": "│ └",
       "format": "{1}"
     },
+    {
+      "type": "custom",
+      "format": "└────────────────────────────────────────────────────┘"
+    },
     // "icons",
+    "break",
+    {
+      "type": "custom",
+      "format": "┌──────────────────────Hardware──────────────────────┐"
+    },
     {
       "type": "cpu",
-      "key": " CPU ",
+      "key": "│ ",
       "format": "{1}"
     },
     {
       "type": "memory",
-      "key": " MEM ",
+      "key": "│ ",
     },
     {
       "type": "gpu",
-      "key": " GPU ",
+      "key": "│ ",
       "format": "{1} {2}"
     },
     {
       "type": "disk",
-      "key": " DISK",
+      "key": "│ ",
+    },
+    {
+      "type": "custom",
+      "format": "└────────────────────────────────────────────────────┘"
     },
     "break",
     {

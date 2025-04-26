@@ -76,11 +76,11 @@ window#waybar {
 #workspaces button.active {
   color: @ws-active;
   transition: all 0.3s ease;
-  margin-left: 4px;
-  margin-right: 12px;
+  /* margin-left: 4px; */
+  /* margin-right: 12px; */
   transition: all 0.4s cubic-bezier(.55,0.68,.48,1.682);
-  border-right: 2px dashed @ws-active;
-  border-left: 2px dashed @ws-active;
+  /* border-right: 2px dashed @ws-active; */
+  /* border-left: 2px dashed @ws-active; */
 }
 
 #workspaces button:hover {
@@ -99,8 +99,8 @@ window#waybar {
   color: @ws-active;
   animation: ws_empty 20s ease-in-out 1;
   transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
-  border-right: 2px dashed @ws-active;
-  border-left: 2px dashed @ws-active;
+  /* border-right: 2px dashed @ws-active; */
+  /* border-left: 2px dashed @ws-active; */
 }
 
 #workspaces button.empty {
@@ -133,43 +133,43 @@ window#waybar {
 }
 
 #clock {
-  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 #battery {
   color: @icon;
-  border-bottom: 2px solid @battery-discharging;
+  border-left: 2px solid @battery-discharging;
   transition: color 0.3s ease, border 0.3s ease;
 }
 
 #battery.charging {
   color: @battery-charging;
-  border-bottom: 2px solid @battery-charging;
+  border-left: 2px solid @battery-charging;
   animation: color-change 2s infinite alternate;
 }
 
 #battery.plugged {
   color: @battery-plugged;
-  border-bottom: 2px solid @battery-plugged;
+  border-left: 2px solid @battery-plugged;
   animation: color-change 2s infinite alternate;
 }
 
 #battery.warning {
   color: @battery-warning;
-  border-bottom: 2px solid @battery-warning;
+  border-left: 2px solid @battery-warning;
   animation: color-change .5s infinite alternate;
 }
 
 #battery.critical {
   color: @battery-critical;
-  border-bottom: 2px solid @battery-critical;
+  border-left: 2px solid @battery-critical;
   animation: color-change .5s infinite alternate;
 }
 
 #cpu {
-  margin-left: 15px;
+  margin-top: 15px;
 }
 
 #language {
-  border-bottom: 2px solid @icon;
+  border-left: 2px solid @icon;
 }

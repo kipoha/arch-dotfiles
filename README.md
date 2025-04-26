@@ -11,3 +11,12 @@
 <img src="preview/powermenu.png" width="550">
 </div>
 <br /><br />
+
+
+
+
+# SDDM
+preview sddm
+```bash
+sddm-greeter --test-mode --theme /usr/share/sddm/themes/catppuccin-mocha/
+```

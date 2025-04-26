@@ -1,0 +1,38 @@
+{
+  "layer": "top", // Waybar at top layer
+  "position": "bottom", // Waybar position (top|bottom|left|right)
+  "spacing": 10, // Gaps between modules (4px)
+  "margin-top": 0,
+  "margin-bottom": 7,
+  "width": 900,
+  "height": 32,
+ 
+  // Choose the order of the modules
+  "modules-left": [
+    // "custom/arch",
+    "cpu",
+    "memory",
+    "temperature"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    // "backlight",
+    // "pulseaudio",
+    // "network",
+    "tray",
+    "custom/nmapplet",
+    "custom/bluemanapplet",
+    "hyprland/language",
+    "battery",
+    "clock"
+    // "custom/notification",
+    // "custom/wlogout"
+  ],
+
+  "include": [
+    "~/.config/waybar/horizontal/modules.json"
+	]
+
+}

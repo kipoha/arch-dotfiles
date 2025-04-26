@@ -46,12 +46,14 @@
  
   "cpu": {
     "format": " {usage}%",
-    "tooltip": true
+    "tooltip": true,
+    "rotate": 270
   },
 
   "memory": {
     "format": " {}%",
-    "tooltip": true
+    "tooltip": true,
+    "rotate": 270
   },
 
   "temperature": {
@@ -59,13 +61,15 @@
     "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input",
     "critical-threshold": 100,
     "format-critical": " {temperatureC}",
-    "format": " {temperatureC}°C"
+    "format": " {temperatureC}°C",
+    "rotate": 270
   },
 
   "hyprland/language": {
     "format": " {}",
     "format-en": "EN",
-    "format-ru": "RU"
+    "format-ru": "RU",
+    "rotate": 270
   },
 
   "battery": {
@@ -78,7 +82,8 @@
     "format-charging": "󰂄 {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon} ",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": ["", "", "", "", ""],
+    "rotate": 270
   },
 
   "network": {
@@ -112,7 +117,8 @@
   "clock": {
     "format": " {:%H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": " {:%e %B %Y}"
+    "format-alt": " {:%e %B %Y}",
+    "rotate": 270
   },
 
   "backlight": {
