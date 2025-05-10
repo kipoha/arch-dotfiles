@@ -115,10 +115,9 @@
   },
   
   "clock": {
-    "format": " {:%H:%M}",
+    "format": "{:%H\n\n%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": " {:%e %B %Y}",
-    "rotate": 270
+    "format-alt": " \n{:%e\n%b\n%y}",
   },
 
   "backlight": {

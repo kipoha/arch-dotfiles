@@ -1,25 +1,32 @@
 #!/bin/bash
 
-options=" Lock\n⏻ Power Off\n󰜉 Reboot\n󱖒 Suspend\n󰤄 Hibernate\n󰈆 Exit"
+# options=" Lock\n⏻ Power Off\n󰜉 Reboot\n󱖒 Suspend\n󰤄 Hibernate\n󰈆 Exit"
+options="\n⏻\n󰜉\n󱖒\n󰤄\n󰈆"
 
-selected=$(echo -e "$options" | wofi --dmenu --style ~/.config/wofi/power.css --width=170 --height=260)
+selected=$(echo -e "$options" | wofi --dmenu --style ~/.config/wofi/power.css --location right --width=47 --height=330)
 case "$selected" in
-  "⏻ Power Off")
+  # "⏻ Power Off")
+  "⏻")
     systemctl poweroff
     ;;
-  "󰜉 Reboot")
+  # "󰜉 Reboot")
+  "󰜉")
     systemctl reboot
     ;;
-  "󰤄 Hibernate")
+  # "󰤄 Hibernate")
+  "󰤄")
     systemctl hibernate
     ;;
-  "󰈆 Exit")
+  # "󰈆 Exit")
+  "󰈆")
     hyprctl dispatch exit
     ;;
-  " Lock")
-    hyprlock
+  # " Lock")
+  "")
+    ~/.config/hypr/scripts/lock_with_date.sh
     ;;
-  "󱖒 Suspend")
+  # "󱖒 Suspend")
+  "󱖒")
     systemctl suspend
     ;;
   *)

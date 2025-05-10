@@ -1,6 +1,7 @@
 PACMAN_PACKAGES = [
     "waybar",
     "wofi",
+    "docker",
     "kitty",
     "fish",
     "fastfetch",
@@ -13,16 +14,34 @@ PACMAN_PACKAGES = [
     "hyprlock",
     "hypridle",
     "swww",
-    "sway",
+    "dunst",
     "swaync",
-    "nautilus",
-    "dunstify",
+    "thunar",
     "wl-clipboard",
-    "wlogout",
     "brightnessctl",
     "cliphist",
-    "pyvenv",
     "papirus-icon-theme",
+    "libnotify",
+    "gobject-introspection",
+    "glow",
+    "less",
+
+    # file viewer/editor
+    "imagemagick",
+    "unzip",
+    "p7zip",
+    "tar",
+    # "libreoffice-fresh", # optional
+    "evince",
+    "gimp",
+    "mpv",
+    "imv",
+
+    "qt5-declarative",
+    "qt5-quickcontrols2",
+    "qt5-graphicaleffects",
+    "xdg-desktop-portal",
+    "xdg-desktop-portal-gtk",
 ]
 
 YAY_PACKAGES = [
@@ -30,6 +49,8 @@ YAY_PACKAGES = [
     "hyprshot",
     "catppuccin-gtk-theme-mocha",
     "bibata-cursor-theme",
+    "walker",
+    "appimagelauncher"
 ]
 
 
@@ -39,10 +60,18 @@ FONTS = [
     "noto-fonts-cjk",
     "noto-fonts",
     "noto-fonts-extra",
+    "noto-fonts-emoji",
 ]
 
 
 
 OTHER_SCRIPTS = [
-    "LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)"
+    "bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.sh)",
+    "curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin",
 ]
+
+print("Here are the packages you need to install:")
+print("\n".join(PACMAN_PACKAGES))
+print("\n".join(YAY_PACKAGES))
+print("\n".join(FONTS))
+print("\n".join(OTHER_SCRIPTS))

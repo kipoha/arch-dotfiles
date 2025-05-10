@@ -1,6 +1,6 @@
 window {
   background-color: rgba(24, 24, 37, 1.0);
-  border-radius: 6px;
+  /* border-radius: 6px; */
 }
 
 * {
@@ -31,7 +31,8 @@ window {
 
 #inner-box {
   margin: 0.5rem;
-  font-size: 1rem;
+  /* font-size: 1.5rem; */
+  font-size: 23px;
 }
 
 #img {

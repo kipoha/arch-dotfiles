@@ -1,4 +1,25 @@
 {
-  "positionX": "left",
-  "positionY": "top",
+  "positionX": "center",
+  "control-center-margin-bottom": 400,
+  "widgets": [
+    "title",
+    "dnd",
+    "volume",
+    "backlight",
+    "mpris",
+    "notifications"
+  ],
+  "widget-config": {
+    "notifications": {
+      "enabled": true
+    },
+    "volume": {
+      "enabled": true,
+      "label": "󰕾"
+    },
+    "backlight": {
+      "enabled": true,
+      "label": "󰃠"
+    }
+  }
 }

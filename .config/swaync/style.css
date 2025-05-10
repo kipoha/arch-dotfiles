@@ -12,8 +12,9 @@ trough highlight {
 scale trough {
   margin: 0rem 1rem;
   background-color: #313244;
-  min-height: 8px;
+  min-height: 13px;
   min-width: 70px;
+  border-radius: 7px;
 }
 
 slider {
@@ -24,7 +25,7 @@ slider {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #313244;
   border-radius: 12.6px;
   margin: 18px;
-  background-color: rgba(30, 30, 46, 0.8);
+  background-color: rgba(30, 30, 46, 1);
   color: #cdd6f4;
   border: 1px solid #f2cdcd;
   padding: 0;
@@ -102,7 +103,7 @@ slider {
   border-radius: 12.6px;
   margin: 18px;
   /* background-color: #1e1e2e; */
-  background-color: rgba(30, 30, 46, 0.8);
+  background-color: rgba(30, 30, 46, 1);
   color: #cdd6f4;
   padding: 14px;
   border: 1px solid #f2cdcd;
@@ -230,7 +231,8 @@ slider {
 
 .notification.low progress,
 .notification.normal progress {
-  background-color: #89b4fa;
+  background-color: #f2cdcd;
+  border-radius: 4px;
 }
 
 .control-center-dnd {
@@ -276,6 +278,8 @@ slider {
 .widget-mpris .widget-mpris-player {
   background: #313244;
   padding: 7px;
+  border-radius: 7px;
+  border: 1px solid #6c7086;
 }
 
 .widget-mpris .widget-mpris-title {
@@ -315,29 +319,45 @@ slider {
 }
 
 .widget-volume {
-  padding-top: 1rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 10px;
+  background: #313244;
+  border-radius: 7px 7px 0 0;
+  border-left: 1px solid #6c7086;
+  border-right: 1px solid #6c7086;
+  border-top: 1px solid #6c7086;
 }
 
 .widget-volume label {
   font-size: 1.5rem;
-  color: #74c7ec;
+  color: #f2cdcd;
 }
 
 .widget-volume trough highlight {
-  background: #74c7ec;
+  background: #f2cdcd;
+  border-radius: 7px;
 }
 
 .widget-backlight trough highlight {
-  background: #f9e2af;
+  background: #f2cdcd;
+  border-radius: 7px;
 }
 
 .widget-backlight label {
   font-size: 1.5rem;
-  color: #f9e2af;
+  color: #f2cdcd;
 }
 
-.widget-backlight .KB {
-  padding-bottom: 1rem;
+.widget-backlight {
+  padding-bottom: 0.5rem;
+  padding-left: 10px;
+  background: #313244;
+  border-radius: 0 0 7px 7px;
+  margin-bottom: 0.5rem;
+  border-left: 1px solid #6c7086;
+  border-right: 1px solid #6c7086;
+  border-bottom: 1px solid #6c7086;
 }
 
 .image {

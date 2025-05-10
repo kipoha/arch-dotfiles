@@ -46,6 +46,7 @@ def show_response(response):
         file_path = f.name
 
     subprocess.run(["kitty", "glow", "-p", file_path])
+    # subprocess.run(["kitty", "-e", "bash", "-c", f"glow -p {file_path}; echo; read -n 1 -s -r -p 'Press any key to close...'"])
 
     os.remove(file_path)
 

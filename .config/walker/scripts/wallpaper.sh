@@ -1,4 +1,4 @@
-list=$(find -L "/home/kipoha/wallpapers/" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \))
+list=$(find -L "/home/kipoha/_projects/dots/arch-dotfiles/wallpapers/" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \))
 
 while walls= read -r path; do
   name=$(b=${path##*/}; echo ${b%.*})
@@ -8,5 +8,11 @@ while walls= read -r path; do
   name=${name//-/ };
   name=${name//   / };
 
-  printf "image=$path;label=${name};exec=swww img --transition-fps 144 --transition-duration 1 -t any $path;\n"
+  if [[ "${path}" == *.png ]]; then
+    exec_script="swww img --transition-fps 144 --transition-duration 1 -t any $path && cp $path ~/.cache/swww/current.png"
+  else
+    exec_script="swww img --transition-fps 144 --transition-duration 1 -t any $path && convert $path ~/.cache/swww/current.png"
+  fi
+
+  printf "image=$path;label=${name};exec=${exec_script};\n"
 done <<< "$list"

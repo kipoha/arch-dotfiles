@@ -6,4 +6,4 @@ if ! ping -c 1 8.8.8.8 &>/dev/null; then
 fi
 
 source ~/.config/wofi/.venv/bin/activate
-python ~/.config/wofi/scripts/gpt.py
+python3.11 ~/.config/wofi/scripts/gpt.py
