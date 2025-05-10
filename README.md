@@ -1,6 +1,6 @@
 ## PREVIEW
 <div align="center">
-<video src="preview/preview.mp4" width="700" controls></video>
+https://i.imgur.com/fEO84QV.mp4
 </div>
 <br /><br />
 
