@@ -1,6 +1,6 @@
 ## PREVIEW
 <div align="center">
-<img src="preview/preview.mp4" width="700">
+<video src="preview/preview.mp4" width="700" controls></video>
 </div>
 <br /><br />
 
