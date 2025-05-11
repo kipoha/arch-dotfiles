@@ -38,6 +38,7 @@ All necessary dependencies and software are located in the [file](scripts/packag
 <img src="preview/lunar-vim.png" width="550">
 <img src="preview/firefox.png" width="550">
 <img src="preview/vesktop.png" width="550">
+<img src="preview/login-manager.png" width="550">
 </div>
 <br /><br />
 
