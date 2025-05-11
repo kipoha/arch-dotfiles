@@ -16,7 +16,7 @@ This dot is made only for my convenience, PC configuration and needs, I do not t
 - [Vimium](https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/)
 
 ## DEPENDENCIES
-All necessary dependencies and software are located in the ![file](scripts/packages.py)
+All necessary dependencies and software are located in the [file](scripts/packages.py)
 
 ## PREVIEW
 <div align="center">
