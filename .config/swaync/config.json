@@ -1,13 +1,15 @@
 {
   "positionX": "center",
   "control-center-margin-bottom": 400,
+  "control-center-margin-left": 1370,
   "widgets": [
-    "title",
-    "dnd",
+    "buttons-grid",
     "volume",
     "backlight",
     "mpris",
-    "notifications"
+    "notifications",
+    "dnd",
+    "title"
   ],
   "widget-config": {
     "notifications": {
@@ -20,6 +22,39 @@
     "backlight": {
       "enabled": true,
       "label": "󰃠"
+    },
+    "buttons-grid": {
+      "max-per-row": 3,
+      "actions": [
+        {
+          "label": "",
+          "command": "kitty -e ~/.local/bin/lvim ~/.config/hypr/hyprland.conf"
+        },
+        {
+          "label": "",
+          "command": "~/Applications/Vesktop-1.5.6_4750224f3aebd53752acfcb195c022d1.AppImage"
+        },
+        {
+          "label": "",
+          "command": "telegram-desktop"
+        },
+        {
+          "label": "",
+          "command": "portproton"
+        },
+        {
+          "label": "󰋩",
+          "command": "nautilus ~/_projects/dots/arch-dotfiles/wallpapers"
+        },
+        {
+          "label": "",
+          "command": "nautilus ~/Videos"
+        },
+        {
+          "label": "",
+          "command": "nautilus ~/_projects"
+        }
+      ]
     }
   }
 }
