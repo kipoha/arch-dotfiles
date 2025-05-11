@@ -29,7 +29,7 @@ All necessary dependencies and software are located in the [file](scripts/packag
 <img src="preview/lockscreen.png" width="550">
 <img src="preview/app-launcher.png" width="550">
 <img src="preview/powermenu.png" width="550">
-<img src="preview/wifi-connector" width="550">
+<img src="preview/wifi-connector.png" width="550">
 <img src="preview/windows(TAB).png" width="550">
 <img src="preview/wallpaper-select.png" width="550">
 <img src="preview/ai-request.png" width="550">
