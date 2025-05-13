@@ -59,3 +59,61 @@ preview sddm
 ```bash
 sddm-greeter --test-mode --theme /usr/share/sddm/themes/catppuccin-mocha/
 ```
+
+
+## KEYBINDINGS
+
+### SYSTEM
+| Key                            | Action                                           |
+|--------------------------------|--------------------------------------------------|
+| `Super + Return(Enter)`        | Launch terminal                                  |
+| `Super + Shift + M`            | Exit from Hyprland                               |
+| `Super + Shift + F`            | Open Wofi Launcher                               |
+| `Super + Shift + W`            | Kill Waybar or Run Waybar with Horizontal config |
+| `Super + Ctrl + W`             | Kill Waybar or Run Waybar with Vertical config   |
+| `Super + N`                    | Open Notification Center                         |
+| `Super + Shift + N`            | Open Power Menu                                  |
+| `Super + Shift + R`            | Open WI-FI connector                             |
+| `Super + E`                    | Open File Manager                                |
+| `Super + B`                    | Open Browser(Firefox)                            |
+| `Super + A`                    | Open AI request                                  |
+| `Super + Shift + V`            | Open Clipboard                                   |
+| `Super + Shift + C`            | Clear Clipboard                                  |
+| `Super + W`                    | Choose Wallpaper                                 |
+| `Super + T`                    | Choose Emoji                                     |
+
+
+### WINDOW KEYBINDINGS
+| Key                            | Action                                           |
+|--------------------------------|--------------------------------------------------|
+| `Super + Shift + Q`            | Close window                                     |
+| `Super + V`                    | Toggle floating mode                             |
+| `Super + P`                    | Pseudo Window(only dwindle)                      |
+| `Super + U`                    | ToggleSplit(only dwindle)                        |
+| `Super + F`                    | Fullscreen                                       |
+| `Super + Tab`                  | Select window                                    |
+| `Super + Shift + H`            | Move window to the left                          |
+| `Super + Shift + L`            | Move window to the right                         |
+| `Super + Shift + K`            | Move window up                                   |
+| `Super + Shift + J`            | Move window down                                 |
+| `Super + Ctrl + H`             | Resize window to the left                        |
+| `Super + Ctrl + L`             | Resize window to the right                       |
+| `Super + Ctrl + K`             | Resize window up                                 |
+| `Super + Ctrl + J`             | Resize window down                               |
+| `Super + 1-9`                  | Switch workspaces                                |
+| `Super + Shift + 1-9`          | Move window to workspace                         |
+| `Super + S`                    | Toggle special workspace                         |
+| `Super + Shift + S`            | Move window to special workspace                 |
+| `Super + O`                    | Change to dwindle layout                         |
+| `Super + Shift + O`            | Change to master layout                          |
+
+
+### SCREENSHOT KEYBINDINGS
+| Key                            | Action                                           |
+|--------------------------------|--------------------------------------------------|
+| `Super + Print`                | Screenshot(clipboard)                            |
+| `Super + Shift + Print`        | Region Screenshot(clipboard)                     |
+| `Super + Ctrl + Print`         | Window Screenshot(clipboard)                     |
+| `Super + Alt + Print`          | Output Screenshot                                |
+| `Super + Shift + Alt + Print`  | Region Output Screenshot                         |
+| `Super + Ctrl + Alt + Print`   | Window Output Screenshot                         |
