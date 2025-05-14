@@ -117,3 +117,13 @@ sddm-greeter --test-mode --theme /usr/share/sddm/themes/catppuccin-mocha/
 | `Super + Alt + Print`          | Output Screenshot                                |
 | `Super + Shift + Alt + Print`  | Region Output Screenshot                         |
 | `Super + Ctrl + Alt + Print`   | Window Output Screenshot                         |
+
+
+
+
+# BUILD
+```bash
+git clone https://github.com/kipoha/arch-dotfiles.git
+cd arch-dotfiles
+make
+```
