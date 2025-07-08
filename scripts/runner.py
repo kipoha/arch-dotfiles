@@ -4,7 +4,7 @@ import subprocess
 
 home = os.path.expanduser("~")
 
-def run_command(command: list, shell: bool = False) -> None:
+def run_command(command: list | str, shell: bool = False) -> None:
     """
     Run a shell command
     """
@@ -26,30 +26,9 @@ def pacman_install(packages: list) -> None:
 
 def configure() -> None:
     for folder in os.listdir(".config"):
-        command = [
-            "cp",
-            "-r",
-            f".config/{folder}/*",
-            f"{home}/.config/{folder}",
-        ]
-        run_command(command)
-
-    command_sddm_theme = [
-        "sudo",
-        "cp",
-        "-r",
-        ".system/themes/*",
-        "/usr/share/themes/",
-    ]
-    run_command(command_sddm_theme)
-
-    run_command(["sudo", "mkdir", "/etc/sddm.conf.d"])
-    command_sddm = [
-        "sudo",
-        "cp",
-        "-r",
-        ".system/sddm/sddm.conf.d/*",
-        "/etc/sddm.conf.d/",
-    ]
-    run_command(command_sddm)
+        command = f"cp -r .config/{folder}/* {home}/.config/{folder}"
+        run_command(command, shell=True)
+    run_command("sudo cp -r .system/themes/* /usr/share/themes/", shell=True)
+    run_command(["sudo", "mkdir", "-p", "/etc/sddm.conf.d"])
+    run_command("sudo cp -r .system/sddm/sddm.conf.d/* /etc/sddm.conf.d/", shell=True)
     run_command(["chsh", "-s", "/usr/bin/fish"])
