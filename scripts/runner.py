@@ -28,7 +28,7 @@ def configure() -> None:
     for folder in os.listdir(".config"):
         command = f"cp -r .config/{folder}/* {home}/.config/{folder}"
         run_command(command, shell=True)
-    run_command("sudo cp -r .system/themes/* /usr/share/themes/", shell=True)
+    run_command("sudo cp -r .system/sddm/themes/* /usr/share/themes/", shell=True)
     run_command(["sudo", "mkdir", "-p", "/etc/sddm.conf.d"])
     run_command("sudo cp -r .system/sddm/sddm.conf.d/* /etc/sddm.conf.d/", shell=True)
     run_command(["chsh", "-s", "/usr/bin/fish"])

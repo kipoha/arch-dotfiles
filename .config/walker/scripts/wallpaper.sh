@@ -1,4 +1,4 @@
-list=$(find -L "/home/kipoha/_projects/dots/arch-dotfiles/wallpapers/" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \))
+list=$(find -L "$HOME/arch-dotfiles/wallpapers/" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \))
 
 while walls= read -r path; do
   name=$(b=${path##*/}; echo ${b%.*})
